@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Registration</h1>
+        <form id="registrationForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label>event session:</label><br>
+            <input type="radio" id="morning" name="session" value="Morning">
+            <label for="morning">Morning Session</label><br>
+            <input type="radio" id="evening" name="session" value="Evening">
+            <label for="evening">Evening Session</label><br>
+
+            <label>event time:</label><br>
+            <input type="checkbox" id="12:00" name="event time" value="Networking">
+            <label for="networking">Networking</label><br>
+            <input type="checkbox" id="workshops" name="event time" value="Workshops">
+            <label for="workshops">Workshops</label><br>
+           
+            <label for="comments"> Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Add your notes here..."></textarea><br>
+
+            <button type="submit"></button>
+        </form>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="style.js"></script>
+</body>
